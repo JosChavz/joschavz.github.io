@@ -127,7 +127,13 @@ header p{
 }
 
 /* Scrolling Anchor */
-section a,
+.scroll{
+    color: var(--neonWhite);
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
 header a{
     font-size: 3rem;
     color: var(--neonWhite);
@@ -141,7 +147,7 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 100vh;
     font-size: 2.5rem;
     opacity: 0;
@@ -154,13 +160,30 @@ section{
 @media only screen and (max-width: 450px){
     section{
         font-size: 1.5rem;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
 section span{
     color: var(--neonPink);
+}
+
+/*Section Content*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1116px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 /*Article*/
@@ -192,6 +215,7 @@ article{
 #third .image-box{background-image: url('images/moon1still.JPG');}
 
 /* Fourth Selection */
+#fourth .content{flex: 5;}
 #fourth .image-box{background-image: url('images/couple.jpg')}
 
 #fourth .image-box::after{
@@ -203,13 +227,10 @@ article{
     opacity: 0.5;
 }
 
-/* Top Anchor */
-.top-anchor{
-    text-align: center;
+/* Bottom Anchor */
+.bottom-anchor{flex: 1;}
+.bottom-anchor a{
     font-size: 2.5rem;
-}
-
-.top-anchor a{
     color: var(--neonBlue);
     border: 2px solid var(--neonBlue);
     text-decoration: none;
@@ -217,7 +238,7 @@ article{
     transition: all ease-in-out 0.5s;
 }
 
-.top-anchor a:hover{
+.bottom-anchor a:hover{
     background: var(--neonBlue);
     color: var(--background);
 }
