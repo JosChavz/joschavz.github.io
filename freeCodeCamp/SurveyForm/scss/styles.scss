@@ -18,7 +18,7 @@ body{
     font-family: $norFont;
 }
 
-h1, h2, h3, h4, h5, h6, legend, label{
+h1, h2, h3, h4, h5, h6, legend, label, th{
     font-family: $impFont;
 }
 
@@ -60,6 +60,8 @@ form{
         }
     }
 }
+
+button:focus{outline: none}
 
 /* Container */
 .container{
@@ -187,6 +189,7 @@ form{
         display: none;
         padding: 35px 15px 0;
         text-align: center;
+        overflow-y: scroll;
 
         h2{text-align: center;}
 
@@ -224,8 +227,9 @@ form{
 
 /* Button Wrap */
 .button-wrap{
+    display: flex;
+    justify-content: space-around;
     grid-column: 1 / span 2;
-    text-align: center;
 
     button{
         font-family: $impFont;
@@ -277,4 +281,16 @@ form{
     background-color: $white;
 }
 
-/* General Info */
+/* Output */
+.output-table{
+    width: 100%;
+    border-collapse: collapse;
+
+    tr{
+        border-bottom: 2px solid $blue;
+
+        th, td{padding: 20px}
+        
+        td{word-break: break-all}
+    }
+}

@@ -29,7 +29,7 @@ $(document).ready(function(){
             $('[name=general]')[0].value,
             $('[name=email-field]')[0].value,
             $('[name=age-field]')[0].value,
-            $('[name=year]')[0].value,
+            $('[name=year]')[0].value
         ]
         var isValid, isRadioValid;
 
@@ -44,17 +44,16 @@ $(document).ready(function(){
         }
 
         for(let i = 0; i < $('[name=gender]').length; i++){
-            if($('[name=gender]')[i].checked){
-                isRadioValid = true;
-            }
-                
+            if($('[name=gender]')[i].checked) isRadioValid = true;
         }
 
         if(!isValid) alert('Please fill in the input');
-        if(!isChecked) alert('Please check a gender');
-        if(!isRadioValid) alert('Please check a box');
+        if(!isRadioValid) alert('Please check a gender');
+        if(!isChecked) alert('Please check a box');
         
         ((isValid) == true && (isChecked == true) && (isRadioValid == true))?isFormValid = true:isFormValid = false
+
+        if(isFormValid) alert('All ready now! Click next!');
     }
 
     reset.click(function(){
