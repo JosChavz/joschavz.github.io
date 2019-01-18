@@ -1,0 +1,272 @@
+/* Variables */
+:root{
+    --background: #05070b;
+    --darkGrey: #20232c;
+    --neonBlue: #72ddf7;
+    --neonPink: #f7aef8;
+    --neonWhite: #f4f4ed;
+    --impFont: 'Monument Valley';
+    --normalFont: 'Munich';
+}
+
+/* Font Import */
+@font-face {
+    font-family: "Monument Valley";
+    src: url('fonts/Monument_Valley_1.2-Regular.otf') format("opentype");
+}
+@font-face {
+    font-family: "Munich";
+    src: url('fonts/munich_sans.ttf') format("truetype");
+}
+
+/* Global */
+*{box-sizing: border-box}
+body{
+    margin: 0;
+    color: var(--neonWhite);
+    font-family: var(--normalFont);
+    position: relative;
+}
+/* Stars */
+#stars, 
+#twinkling{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#stars::before, 
+#twinkling::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
+
+#stars::before{
+    background: #000 url('images/stars.png') repeat top center;
+    z-index: -2;
+}
+
+#twinkling::before{
+    top: 0;
+    background: transparent url('images/twinkling.png') repeat top center;
+    z-index: -1;
+    animation: moveable 150s linear infinite;
+}
+
+@keyframes moveable{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -10000px 5000px;
+    }
+}
+
+/* Header */
+.moon-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 80%;
+    max-width: 80em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.moon-container img{
+    width: inherit;
+    min-width: 20em;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    opacity: 0;
+    position: relative;
+}
+
+header h1{
+    margin: 0;
+    font-family: var(--impFont);
+    font-size: 5rem;
+    border-bottom: 1px solid var(--neonWhite);
+}
+
+header p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/*Image Box*/
+.image-box{
+    width: 400px;
+    height: 400px;
+    border: 3px dotted var(--neonWhite);
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(0.8);
+}
+
+@media only screen and (max-width: 450px){
+    .image-box{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* Scrolling Anchor */
+.scroll{
+    color: var(--neonWhite);
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+header a{
+    font-size: 3rem;
+    color: var(--neonWhite);
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+}
+
+/*Section*/
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: opacity ease-in-out 1.3s;
+    padding: 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (max-width: 450px){
+    section{
+        font-size: 1.5rem;
+        justify-content: space-between;
+    }
+}
+
+section span{
+    color: var(--neonPink);
+}
+
+/*Section Content*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1116px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/*Article*/
+article{
+    max-width: 800px;
+    flex-shrink: 1;
+}
+
+/*First Section*/
+#first{position: relative;}
+#first .image-box{background-image: url('images/hand-out.jpg');}
+
+#first article p:nth-child(2){
+    text-align: right;
+    position: relative;
+    left: 10%;
+    filter: blur(1px) opacity(0.65);
+}
+
+#first article p:nth-child(4){text-align: center;}
+
+/* Second Selection */
+#second .image-box{background-image: url('images/man-alone-at-night.jpg');}
+
+#second p:nth-child(2){text-align: center;}
+#second p:nth-child(3){text-align: right;}
+
+/* Third Selection */
+#third .image-box{background-image: url('images/moon1still.JPG');}
+
+/* Fourth Selection */
+#fourth .content{flex: 5;}
+#fourth .image-box{background-image: url('images/couple.jpg')}
+
+#fourth .image-box::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+}
+
+/* Bottom Anchor */
+.bottom-anchor{flex: 1;}
+.bottom-anchor a{
+    font-size: 2.5rem;
+    color: var(--neonBlue);
+    border: 2px solid var(--neonBlue);
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: all ease-in-out 0.5s;
+}
+
+.bottom-anchor a:hover{
+    background: var(--neonBlue);
+    color: var(--background);
+}
+/* Footer */
+footer{
+    margin-top: 20px;
+    padding: 35px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/*More*/
+.more{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.more a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: var(--neonPink);
+    border: 2px solid var(--neonPink);
+    transition: all ease-in-out 0.5s;
+    margin-bottom: 15px;
+}
+
+.more a:hover{ 
+    color: var(--background);
+    background: var(--neonPink);
+}

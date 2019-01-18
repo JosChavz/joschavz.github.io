@@ -1,0 +1,103 @@
+/* Variables */
+/*Global Style*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 20px "Roboto", sans-serif;
+  background-color: #e7d7c1;
+  position: relative; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+.icons {
+  width: 50px; }
+
+/*Main*/
+#main {
+  text-align: center;
+  background-color: #a78a7f;
+  padding: 25px 0;
+  min-width: 320px; }
+  #main h1 {
+    font: 700 35px "Playfair Display", serif;
+    color: #e7d7c1; }
+    @media screen and (min-width: 850px) {
+      #main h1 {
+        font: 700 55px "Playfair Display", serif; } }
+  #main #img-div {
+    display: inline-block;
+    padding-top: 25px;
+    background: #e7d7c1;
+    border-radius: 4px; }
+    @media screen and (min-width: 850px) {
+      #main #img-div {
+        padding: 25px; } }
+    #main #img-div img {
+      display: block;
+      max-width: 300px;
+      margin: 0 auto 15px; }
+    #main #img-div #img-caption {
+      font: italic 17px sans-serif;
+      color: #735751;
+      padding: 5px; }
+
+/* Social Media */
+.social-media {
+  display: none;
+  box-sizing: content-box; }
+  @media screen and (min-width: 850px) {
+    .social-media {
+      position: fixed;
+      display: block;
+      background-color: #735751;
+      width: 50px;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      padding: 15px; } }
+
+/*Tribute Info*/
+#tribute-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 33px;
+  position: relative; }
+  #tribute-info span {
+    display: block;
+    font: italic 17px sans-serif;
+    margin-bottom: 15px; }
+    @media screen and (min-width: 850px) {
+      #tribute-info span {
+        position: absolute;
+        top: 45px;
+        right: 15px; } }
+  #tribute-info h3 {
+    font: 700 35px "Playfair Display", serif;
+    color: #bf4342;
+    margin: 15px 0; }
+  #tribute-info p {
+    margin-bottom: 30px; }
+  #tribute-info a {
+    display: block;
+    text-align: center;
+    color: #735751; }
+
+/*Footer*/
+footer {
+  padding: 30px;
+  background-color: #735751;
+  color: #e7d7c1;
+  font: 21px "Playfair Display", serif;
+  text-align: center; }
+  footer a {
+    color: #e7d7c1; }
+  @media screen and (min-width: 850px) {
+    footer .icons {
+      display: none; } }
+
+/*# sourceMappingURL=styles.css.map */

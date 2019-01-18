@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jose Chavez Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400|Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <nav id="main-nav">
+        <div id="main-nav-header">
+            <div id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>Chavez</h1>
+        </div>
+
+        <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="top">
+        <img src="imgs/port-logo.svg" alt="portfolio logo">
+        <h1>Front-end web developer</h1>
+    </header>
+
+    <div id="work">
+        <div class="wrapper">
+            <h2>Latest Project</h2>
+            <span class="work-arrow"></span>
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="box-image"></div>
+                    <a href="#"><h3>Recipe Page</h3></a>
+                </div>
+                <div class="box">
+                    <div class="box-image"></div>
+                    <a href="#"><h3>Hyper Link Page</h3></a>
+                </div>
+                <div class="box">
+                    <div class="box-image"></div>
+                    <a href="#"><h3>Tribute Page</h3></a>
+                </div>
+                <div class="box">
+                    <div class="box-image"></div>
+                    <a href="#"><h3>Survey Form</h3></a>
+                </div>
+            </div>
+            <span class="bottom-box"></span>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="wrapper">
+            <h2>Skill Set</h2>
+            <div class="skills-wrapper">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="percentage first"></div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="percentage second"></div>
+                </div>
+                <div class="skill">
+                    <h3>JS</h3>
+                    <div class="percentage third"></div>
+                </div>
+                <div class="skill">
+                    <h3>PHP</h3>
+                    <div class="percentage fourth"></div>
+                </div>
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="percentage fifth"></div>
+                </div>
+            </div>
+
+            <div class="libraries-wrapper">
+                <h4>Known Libraries</h4>
+                <img src="imgs/sass-icon.png" alt="sass icon">
+                <img src="imgs/jquery-icon.gif" alt="jquery icon">
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="wrapper">
+            <h2>Who am I?</h2>
+            <div class="text-wrap">
+                <p>I am a novice web developer yearning to know the loops in Web Design and Development. Currently enrolled at Miracosta College working towards a Web Design / Development AA and transfer credits for a Computer Science bachelor degree. Learning new languages (in general) is always a challenge but interesting and incredibly fun!</p>
+                <div class="self-port"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <article>
+                <h2>Ready to start a project?</h2>
+                <p>I would be honored to create your website. 
+                    Interested? Contact me!</p>
+            </article>
+
+            <form action="mailto:josmchavz@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" id="form_name" placeholder="Name">
+                <input type="text" name="email" id="form_email" placeholder="Email">
+                <textarea name="comments" id="form_text" cols="10" rows="5" placeholder="Message"></textarea>
+                <button type="submit">Submit here</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#top" class="back">
+            <span class="arrow"></span>
+            <span class="arrow"></span>
+        </a>
+        <div class="icon-logo">
+            <a href="#"><img src="imgs/github-logo.svg" alt="github logo"></a>
+            <a href="#"><img src="imgs/google-logo.svg" alt="google logo"></a>
+            <a href="#"><img src="imgs/twitter-logo-silhouette.svg" alt="twitter logo"></a>
+            <a href="#"><img src="imgs/instagram-logo.svg" alt="isntagram logo"></a>
+        </div>
+
+        <h3>Jose Manuel Chavez Portfolio 2019</h3>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>

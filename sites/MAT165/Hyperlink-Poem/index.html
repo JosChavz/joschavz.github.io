@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hyper Poem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Background // Must have plenty of content or else it won't look good-->
+    <div id="stars"></div>
+    <div id="twinkling"></div>
+    <!--A sticky anchor element that will be on the site ONLY when user passes 100vh (next section)-->
+
+    <div class="container">
+        <div class="moon-container">
+            <img src="images/moon.png" alt="image of moon">
+        </div>
+        <header id="home">
+            <h1>Talking to the Moon</h1>
+            <p>A song by Bruno Mars<br>
+            Presented by Jose Chavez</p>
+            <audio controls>
+                <source src="audio/Talking To The Moon.mp3" type="audio/mpeg">
+                Your browser does not support the audop element
+            </audio>
+            <a href="#first" class="scroll">&#8659;</a>
+        </header>
+
+        <section id="first">
+            <div class="content">
+				<article>
+					<p>I know you're somewhere out there.</p>
+					<p>Somewhere far away.</p>
+					<p>I want you back.</p>
+					<p>I want <span>you</span> back.</p>
+				</article>
+            <div class="image-box"></div>
+			</div>
+            <a href="#second" class="scroll">&#8659;</a>
+        </section>
+
+        <section id="second">
+            <div class="content">
+				<article>
+					<p>My neighbors think I'm crazy but they don't understand.</p>
+					<p>You're all I have.</p>
+					<p><span>You're</span> all I have.</p>
+				</article>
+            <div class="image-box"></div>
+			</div>
+            <a href="#third" class="scroll">&#8659;</a>
+        </section>
+
+        <section id="third">
+            <div class="content">
+				<article>
+					<p>At night when the stars light up my room, <br>I sit by myself talking to the moon.</p>
+					<p>Trying to get to <span>you</span>.</p>
+				</article>
+            <div class="image-box"></div>
+			</div>
+            <a href="#fourth" class="scroll">&#8659;</a>
+        </section>
+
+        <section id="fourth">
+            <div class="content">
+				<article>
+					<p>In hopes <span>you're</span> on the other side talking to me too.</p>
+				</article>
+            <div class="image-box"></div>
+			</div>
+			<div class="bottom-anchor">
+				<a href="#home" class="bottom scroll">Top &#8593;</a>
+			</div>
+        </section>
+
+        <footer>
+            <div class="more">
+                <a href="http://www.brunomars.com/#" target="_blank">Bruno Mars Official Site</a>
+                <a href="https://www.biography.com/people/bruno-mars-17162400">About Bruno Mars</a>
+            </div>
+            <p>Website made by Jose Chavez for MAT165</p>
+        </footer>
+    </div>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
