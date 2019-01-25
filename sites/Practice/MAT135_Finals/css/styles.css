@@ -1,0 +1,132 @@
+/*If you are seeing this on CSS, please redirect to SCSS file for a better reading*/
+/*VARIABLES*/
+/*GLOBAL*/
+body {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.cat {
+  width: 100vw;
+  background-color: white;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding: 26px 0;
+}
+
+.active {
+  overflow: hidden;
+}
+.active nav ul {
+  display: flex;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.stop {
+  position: absolute;
+  bottom: 0;
+}
+
+/*STYLING*/
+nav {
+  position: sticky;
+  text-align: center;
+}
+nav .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40px;
+  height: 32px;
+  left: 15px;
+  top: 25px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 2;
+}
+nav .button span {
+  display: block;
+  background-color: black;
+  width: 33px;
+  height: 4px;
+  border-radius: 3px;
+  transition: all ease-in-out 0.3s;
+}
+nav h1 {
+  display: none;
+}
+nav ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+nav ul li {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+nav ul li a {
+  color: black;
+  padding: 25px;
+}
+
+#home header {
+  text-align: center;
+  position: relative;
+}
+#home header img {
+  width: 230px;
+  margin: 80px 0 30px;
+}
+#home header .header-img {
+  width: 308px;
+  height: 308px;
+  background: #222A30 url("../images/headerImage.jpg") no-repeat center;
+  background-size: cover;
+  margin: 0 auto 52px;
+  color: white;
+  position: relative;
+  z-index: -1;
+}
+#home header .header-img h4 {
+  position: absolute;
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 29px;
+}
+#home header .header-img #header-first {
+  bottom: 0;
+  left: 5px;
+}
+#home header .header-img #header-second {
+  bottom: -29px;
+  right: 5px;
+  color: black;
+}
+
+#category {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5D9D9;
+}
+
+#faqs {
+  width: 100vw;
+  height: 100vh;
+  background-color: mistyrose;
+}
+
+/*# sourceMappingURL=styles.css.map */

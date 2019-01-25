@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Arts Competition</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,700,700i|Oswald:200,300|Roboto:100i" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--
+        **KEYWORDS ON DOC**
+        DL: Delete Later
+    -->
+    <!--
+        PC: Container will have three sections
+        Tablet: Container will not have three sections but will remain Wrapper layout
+        Mobile: Container nor Wrapper will have three sections
+    -->
+    <div class="container">
+        <!--The first container within the CSS grid-->
+        <nav>
+            <div class="button" id="nav-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Menu</h1><!--PC-->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#faqs">faqs</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!--Home-->
+        <!--The second container within the CSS grid-->
+        <section id="home" class="wrapper">
+            <header>
+                <h2 class="cat">Home</h2>
+                <img src="images/icon-01.svg" alt="Media Arts Competition icon">
+
+                <div class="header-img">
+                    <!--These tags will not be visible in PC, just mobile.-->
+                    <h4 id="header-first">Advancing the Business</h4>
+                    <h4 id="header-second">of Creativity</h4>
+                    <!--DL: Margins will be equal but add the height of the last h4 to the bottom margin-->
+                </div>
+
+                <h5>All entries must be submitted by <time datetime="2019-01-31">January 31, 2019</time>.</h5>
+
+                <span class="mouse"></span><!--DL: Don't forget to keep this relative to position the wheel-->
+            </header>
+        </section>
+
+        <!--Category-->
+        <section id="category" class="wrapper">
+            <h2 class="cat">Categories</h2>
+
+            <div class="content">
+                <div class="box"><!--In CSS, grab the h5s not the child to go on the side-->
+                    <h5>Illustration</h5>
+                    <h5>Photography</h5>
+                    <div class="box-image">
+                        <h3>Digital Imagery</h3><!--Needs a fixed width-->
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h5>Cinematic Still</h5>
+                    <h5>Architectural/Industrial Model</h5>
+                    <div class="box-image">
+                        <h3>3D Digital Imagery</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h5>Has side</h5>
+                    <div class="box-image">
+                        <h3>Tittle</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h5>Has side</h5>
+                    <div class="box-image">
+                        <h3>Tittle</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h5>Has side</h5>
+                    <div class="box-image">
+                        <h3>Tittle</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h5>Has side</h5>
+                    <div class="box-image">
+                        <h3>Tittle</h3>
+                    </div>
+                </div>
+            </div>
+        </section>                              
+
+        <!--FAQs-->
+        <section id="faqs" class="wrapper">
+            <h2 class="cat">faqs</h2>
+        </section>                              
+
+        <!--Process-->
+        <section id="process" class="wrapper">
+
+        </section>                              
+
+        <!--Contact-->
+        <section id="contact" class="wrapper">
+
+        </section>                              
+                             
+        <!--The last container is non-existing-->
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="js/button.js"></script>
+</body>
+</html>

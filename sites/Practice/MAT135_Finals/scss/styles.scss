@@ -1,0 +1,148 @@
+/*If you are seeing this on CSS, please redirect to SCSS file for a better reading*/
+/*VARIABLES*/
+$impFont: 'Cormorant', serif;
+$normalFont: 'Oswald', sans-serif;
+$contactFont: 'Roboto', sans-serif;
+$categoryBG: #F5D9D9;
+$faqsBG: linear-gradient(to left, #232426, #25252F);
+$processBG: #CEBBFC;
+$deadlineBG: #7E93CC;
+$contactColor: #8B578B;
+$faqsColor: #86CEFF;
+$gold: #F6BD27;
+$tablet: 768px;
+$mobile: 400px;
+
+/*GLOBAL*/
+body{box-sizing: border-box; font-family: $normalFont;}
+//container and wrapper have the same layout if you think about it. Modifications can be done in their subcatg.
+
+.cat{
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: $impFont;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    padding: 26px 0;
+}
+
+.active{
+    overflow: hidden;
+
+    nav ul{display: flex;}
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+}
+
+.stop{
+    position: absolute;
+    bottom: 0;
+}
+
+/*STYLING*/
+//container
+
+//nav
+nav{
+    position: sticky;
+    text-align: center;
+
+    .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 40px;
+        height: 32px;
+        left: 15px;
+        top: 25px;
+        position: fixed;
+        cursor: pointer;
+        z-index: 2;
+
+        span{
+            display: block;
+            background-color: black; 
+            width: 33px;
+            height: 4px;
+            border-radius: 3px;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+    h1{display: none}
+
+    ul{
+        display: none; //flex
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+        li{
+            text-transform: uppercase;
+            margin-bottom: 15px;
+
+            a{
+               color: black;
+               padding: 25px;
+            }
+        }
+    }
+}
+
+//home
+#home{
+
+    header{
+        text-align: center;
+        position: relative;
+
+        img{width: 230px; margin: 80px 0 30px}
+
+        .header-img{
+            width: 308px;
+            height: 308px;
+            background: #222A30 url('../images/headerImage.jpg') no-repeat center;
+            background-size: cover;
+            margin: 0 auto 52px;
+            color: white;
+            position: relative;
+            z-index: -1;
+
+            h4{
+                position: absolute;
+                font-family: $impFont; 
+                font-weight: 700;
+                font-style: italic;
+                font-size: 29px;
+            }
+
+            #header-first{bottom: 0; left: 5px;}
+            #header-second{bottom: -29px; right: 5px; color: black;}
+        }
+    }
+}
+
+//categories
+#category{
+    width: 100vw;
+    height: 100vh;
+    background-color: $categoryBG;
+}
+
+//FAQs 
+#faqs{
+    width: 100vw;
+    height: 100vh;
+    background-color: mistyrose;
+}
