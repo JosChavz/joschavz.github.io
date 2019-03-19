@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6{
 
     @media screen and (min-width: $tablet) {
         background-color: $black;
-        padding: 10px;
+        //padding: 10px;
     }
 
     #main-nav-header{
@@ -87,11 +87,11 @@ h1, h2, h3, h4, h5, h6{
         background-color: $white;
         margin: 0;
         box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-        padding: 10px;
+        padding: 0;
 
         li{
             list-style: none;
-            margin-bottom: 15px;
+            margin: 15px 0;
 
             @media screen and (min-width: $tablet){
                 margin: 0;
@@ -103,11 +103,18 @@ h1, h2, h3, h4, h5, h6{
                 color: $black;
                 font-family: $impFont;
                 text-transform: uppercase;
+                padding: 10px 0;
 
                 @media screen and (min-width: $tablet){
                     color: $white;
-                    padding: 5px 25px;
+                    padding: 25px 25px;
                 }
+            }
+
+            a:hover{
+                background: $white;
+                color: $black;
+                transition: all ease-in-out 0.25s;
             }
         }
 
@@ -496,3 +503,4 @@ footer{
 .box:nth-child(2) .box-image{background-image: url('../imgs/snap-2.jpg')}
 .box:nth-child(3) .box-image{background-image: url('../imgs/snap-3.jpg')}
 .box:nth-child(4) .box-image{background-image: url('../imgs/snap-4.jpg')}
+.box:nth-child(5) .box-image{background-image: url('../imgs/snap-5.JPG')}

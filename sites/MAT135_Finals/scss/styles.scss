@@ -218,6 +218,8 @@ nav{
 
         p{
             display: block;
+            max-width: 389px;
+            justify-self: center; 
             font-family: $impFont; 
             font-weight: 700;
             font-style: italic;
@@ -284,7 +286,7 @@ nav{
         .mouse{
             display: block;
             position: relative;
-            grid-column: 1 / span 4;
+            grid-column: 1 / span 3;
             margin: 20px auto;
             width: 20px;
             height: 40px;

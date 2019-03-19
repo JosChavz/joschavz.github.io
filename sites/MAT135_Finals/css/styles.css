@@ -164,6 +164,8 @@ nav {
         display: none; }
     #home.header-pc header p {
       display: block;
+      max-width: 389px;
+      justify-self: center;
       font-family: "Cormorant", serif;
       font-weight: 700;
       font-style: italic;
@@ -219,7 +221,7 @@ nav {
   #home header .mouse {
     display: block;
     position: relative;
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
     margin: 20px auto;
     width: 20px;
     height: 40px;
