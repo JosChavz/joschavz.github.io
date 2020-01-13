@@ -202,6 +202,7 @@ header{
         flex-direction: column;
         margin-bottom: 20px;
         flex-wrap: wrap;
+        padding: 5px;
         
         @media screen and (min-width: $tablet) {
             justify-content: space-around;
@@ -215,10 +216,6 @@ header{
             height: 250px;
             background-color: $white;
             margin: 0 auto;
-
-            @media screen and (min-width: $tablet){
-                margin: 0;
-            }
         }
 
         a{
@@ -499,8 +496,11 @@ footer{
     background-size: cover;
 }
 
-.box:nth-child(1) .box-image{background-image: url('../imgs/snap-1.jpg')}
-.box:nth-child(2) .box-image{background-image: url('../imgs/snap-2.jpg')}
-.box:nth-child(3) .box-image{background-image: url('../imgs/snap-3.jpg')}
-.box:nth-child(4) .box-image{background-image: url('../imgs/snap-4.jpg')}
-.box:nth-child(5) .box-image{background-image: url('../imgs/snap-5.JPG')}
+.box:nth-child(8) .box-image{background-image: url('../imgs/snap-1.jpg')}
+.box:nth-child(7) .box-image{background-image: url('../imgs/snap-2.jpg')}
+.box:nth-child(6) .box-image{background-image: url('../imgs/snap-3.jpg')}
+.box:nth-child(5) .box-image{background-image: url('../imgs/snap-4.jpg')}
+.box:nth-child(4) .box-image{background-image: url('../imgs/snap-5.JPG')}
+.box:nth-child(3) .box-image{background-image: url('../imgs/snap-6.JPG')}
+.box:nth-child(2) .box-image{background-image: url('../imgs/snap-7.JPG')}
+.box:nth-child(1) .box-image{background-image: url('../imgs/snap-8.JPG')}
