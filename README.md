@@ -5,5 +5,9 @@ Links to available links:
 + ## [Hyper Link Page](https://joschavz.github.io/MAT165/Hyperlink-Poem/index.html)
 
 ## freeCodeCamp
+### Legacy Web Development Projects
 + ## [Tribute Page](https://joschavz.github.io/freeCodeCamp/TributePage/index.html)
 + ## [Survey Form](https://joschavz.github.io/freeCodeCamp/SurveyForm/index.html)
+
+### Front End Development Library Projects
++ ## [Random Quote Generator](https://fccrandomquote.herokuapp.com/)
